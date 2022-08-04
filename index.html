@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Currículo Diego</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&display=swap" rel="stylesheet"> 
+  <script src='main.js'></script>
+</head>
+<body>
+  <main>
+    <article class="page-1">
+      <section class="grupo-titulo">
+        <img src="./assets/images/diego.jpg" alt="Foto de Diego Formentin">
+        <h1>Diego Formentin</h1>
+        <h2>Programador e estudante</h2>
+      </section>
+      <section class="grupo-caixa-descricao">
+        <div class="caixa-descriticao">
+          <div class="caixa-icon-descricao">
+            <img src="./assets/icons/map-pin.svg" alt="Ícone de Pin">
+          </div>
+          <span>Tubarão / SC</span>
+        </div>
+        <div class="caixa-descriticao">
+          <div class="caixa-icon-descricao">
+            <img src="./assets/icons/book.svg" alt="Ícone de livros">
+          </div>
+          <span>IFSC</span>
+        </div>
+        <div class="caixa-descriticao">
+          <div class="caixa-icon-descricao">
+            <img src="./assets/icons/star.svg" alt="Ícone de livros">
+          </div>
+          <span>Fase 6</span>
+        </div>
+      </section>
+      <section class="grupo-contato">
+        <h3>Contato</h3>
+        <div class="caixa-icones-contato">
+          <a href="https://github.com/diegoeliastb" target="_blank">
+            <img src="./assets/icons/github.svg" alt="Ícone do Github">
+          </a>
+          <img src="./assets/icons/linkedin.svg" alt="Ícone do Linkedin">
+          <img src="./assets/icons/instagram.svg" alt="Ícone do Instagram">
+          <img src="./assets/icons/mail.svg" alt="Ícone de e-mail">
+        </div>
+      </section>
+    </article>
+    <article class="page-2">
+      <section class="descricao-autor">
+        <h3>Sobre mim</h3>
+        <p>Ao longo de minha carreira pude adiquerir muita experiencia e convivo profissional, esse tempo me serviu para mostrar ainda mais minha paixão pela área da tecnologia da informação, o desafia de aprender é o mais importante para mim</p>
+      </section>
+      <section class="lista-tecnologias">
+        <h3>Minhas tecnologias</h3>
+        <div class="grupo-botoes-tecnologia">
+          <button onclick="botaoTypescript()">
+            <img src="./assets/icons/logo-typescript.svg" alt="">
+          </button>
+          <button onclick="botaoAngular()">
+            <img src="./assets/icons/logo-angular.svg" alt="">
+          </button>
+          <button onclick="botaoReact()">
+            <img src="./assets/icons/logo-react.svg" alt="">
+          </button>
+        </div>
+<!--         <img src="./assets/images/tecnologias.png" alt="">-->
+      </section>
+      <section class="informacao-tecnologias">
+        <div>
+          <h3 id="titulo-tecnologia">React</h3>
+          <p id="descricao-tecnologia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="link-tecnologia">
+            <img src="./assets/icons/link.svg" alt="Ícone de link">
+            <a id="link-tecnologia" href="https://reactjs.org/" target="_blank">Acessar site oficial da tecnologia.</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+
+<script src="./index.js"></script>
+</html>
