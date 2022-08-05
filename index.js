@@ -1,22 +1,31 @@
-function botaoTypescript() {
-  document.getElementById('titulo-tecnologia').textContent = descricoes[0].titulo;
-  document.getElementById('descricao-tecnologia').textContent = descricoes[0].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[0].link);
+function apresentaTecnologia(tecnologia) {
+  switch(tecnologia) {
+    case 'Typescript': alteraTecnologia('Typescript');
+      break;
+    case 'Java': alteraTecnologia('Java');
+      break;
+    case 'Angular': alteraTecnologia('Angular');
+      break;
+    case 'React': alteraTecnologia('React');
+      break;
+    case 'PostgresSQL': alteraTecnologia('PostgresSQL');
+      break;
+    case 'Figma': alteraTecnologia('Figma');
+      break;
+    default: alteraTecnologia('Typescript');
+      break;
+  }
 }
 
-function botaoAngular() {
-  document.getElementById('titulo-tecnologia').textContent = descricoes[1].titulo;
-  document.getElementById('descricao-tecnologia').textContent = descricoes[1].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[1].link);
+function alteraTecnologia(tecnologia) {
+  let objeto = arrayTecnologia.find(it => it.titulo === tecnologia);
+  
+  document.getElementById('titulo-tecnologia').textContent = objeto.titulo;
+  document.getElementById('descricao-tecnologia').textContent = objeto.descricao;
+  document.getElementById('link-tecnologia').setAttribute('href', objeto.link);
 }
 
-function botaoReact() {
-  document.getElementById('titulo-tecnologia').textContent = descricoes[2].titulo;
-  document.getElementById('descricao-tecnologia').textContent = descricoes[2].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[2].link);
-}
-
-let descricoes = [
+let arrayTecnologia = [
   {
     titulo: 'Typescript',
     descricao: 'Um superset de javascript que permite a utilização de tipagem e muitas outras ferramentas tornando a linguagem ainda mais poderosa!',
@@ -32,5 +41,20 @@ let descricoes = [
     descricao: 'Um poderoso framework para front-ends desenvolvido pela Meta!',
     link: 'https://reactjs.org/'
   },
+  {
+    titulo: 'Java',
+    descricao: 'Uma linguagem de programação anos de história, mas ainda muito poderosa e relevante no mercado!',
+    link: 'https://openjdk.org/'
+  },
+  {
+    titulo: 'PostgresSQL',
+    descricao: 'Um banco de dados relacional amplamente abrangente!',
+    link: 'https://www.postgresql.org/'
+  },
+  {
+    titulo: 'Figma',
+    descricao: 'Uma ferramenta para criação de designe, prototipação e muito mais!',
+    link: 'https://www.figma.com/'
+  }
 ];
 
