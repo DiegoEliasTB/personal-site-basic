@@ -1,5 +1,7 @@
 :root {
-  --cor-primaria: #22577A
+  --cor-primaria: #22577A;
+  --cor-secundaria: #2B4865;
+  --cor-texto: #fcfcf9;
 }
 
 * {
@@ -44,7 +46,10 @@ article.page-1 {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 2rem 1.5rem;
-  
+}
+
+article.page-1 h1, h3 {
+  color: var(--cor-primaria);
 }
 
 .grupo-titulo {
@@ -59,8 +64,8 @@ article.page-1 {
   margin-bottom: 0.5rem;
   object-fit: cover;
   border-radius: 50%;
-  border: solid 5px var(--cor-primaria);
-  background-color: var(--cor-primaria);
+  border: solid 5px var(--cor-secundaria);
+  background-color: var(--cor-secundaria);
 }
 
 section.grupo-caixa-descricao {
@@ -79,7 +84,7 @@ div.caixa-descriticao {
 
   width: 190px;
   height: 45px;
-  border: solid 3px var(--cor-primaria);
+  border: solid 3px var(--cor-secundaria);
   border-left: 0;
 }
 
@@ -93,8 +98,8 @@ div.caixa-icon-descricao {
   justify-content: center;
   width: 45px;
   height: 45px;
-  border: solid 3px var(--cor-primaria);
-  background-color: var(--cor-primaria);
+  border: solid 3px var(--cor-secundaria);
+  background-color: var(--cor-secundaria);
 }
 
 section.grupo-contato {
@@ -118,7 +123,7 @@ div.caixa-icones-contato a {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: solid 2px var(--cor-primaria);
+  border: solid 2px var(--cor-secundaria);
   border-radius: 50px;
 }
 
@@ -127,8 +132,7 @@ article.page-2 {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem 5rem;
-
-  background: linear-gradient(-45deg, #0b314b, #22577A, #23a6d5, #56caff);
+  background: linear-gradient(-45deg, #0B314B, #133E5B, #1A4A6A, #22577A);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   width: 100%;
@@ -137,10 +141,12 @@ article.page-2 {
 article.page-2 h3 {
   font-size: 24px;
   margin-bottom: 1rem;
+  color: #b1cddd;
 }
 
 article.page-2 p {
   font-size: 18px;
+  color: var(--cor-texto)
 }
 
 div.grupo-botoes-tecnologia {
@@ -155,7 +161,7 @@ button {
   height: 50px;
   margin-right: 0.75rem;
   cursor: pointer;
-  border: solid 2px black;
+  border: solid 2px var(--cor-texto);
   border-radius: 6px;
 }
 
@@ -172,11 +178,10 @@ div.link-tecnologia {
 div.link-tecnologia a {
   margin: 0.75rem 0.5rem;
   text-decoration: none;
-  color: black;
+  color: var(--cor-texto);
 }
 
 div.link-tecnologia a:hover {
-  color: white;
   text-decoration: underline;
 }
 

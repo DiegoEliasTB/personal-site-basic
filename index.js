@@ -1,19 +1,19 @@
 function botaoTypescript() {
   document.getElementById('titulo-tecnologia').textContent = descricoes[0].titulo;
   document.getElementById('descricao-tecnologia').textContent = descricoes[0].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[0].link);
+  document.getElementById('link-tecnologia').setAttribute('href', descricoes[0].link);
 }
 
 function botaoAngular() {
   document.getElementById('titulo-tecnologia').textContent = descricoes[1].titulo;
   document.getElementById('descricao-tecnologia').textContent = descricoes[1].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[1].link);
+  document.getElementById('link-tecnologia').setAttribute('href', descricoes[1].link);
 }
 
 function botaoReact() {
   document.getElementById('titulo-tecnologia').textContent = descricoes[2].titulo;
   document.getElementById('descricao-tecnologia').textContent = descricoes[2].descricao;
-  document.getElementById('link-tecnologia').setAttribute(descricoes[2].link);
+  document.getElementById('link-tecnologia').setAttribute('href', descricoes[2].link);
 }
 
 let descricoes = [
