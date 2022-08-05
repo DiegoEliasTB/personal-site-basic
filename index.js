@@ -33,17 +33,17 @@ let arrayTecnologia = [
   },
   {
     titulo: 'Angular',
-    descricao: 'Um poderoso framework para front-ends desenvolvido pelo Google!',
+    descricao: 'Um poderoso framework para front-end desenvolvido pelo Google!',
     link: 'https://angular.io/'
   },
   {
     titulo: 'React',
-    descricao: 'Um poderoso framework para front-ends desenvolvido pela Meta!',
+    descricao: 'Um poderoso framework para front-end desenvolvido pela Meta!',
     link: 'https://reactjs.org/'
   },
   {
     titulo: 'Java',
-    descricao: 'Uma linguagem de programação anos de história, mas ainda muito poderosa e relevante no mercado!',
+    descricao: 'Uma linguagem de programação com anos de história, mas ainda muito poderosa e relevante no mercado!',
     link: 'https://openjdk.org/'
   },
   {
@@ -53,7 +53,7 @@ let arrayTecnologia = [
   },
   {
     titulo: 'Figma',
-    descricao: 'Uma ferramenta para criação de designe, prototipação e muito mais!',
+    descricao: 'Uma ferramenta para criação de design, prototipação e muito mais!',
     link: 'https://www.figma.com/'
   }
 ];
